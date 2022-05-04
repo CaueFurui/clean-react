@@ -1,4 +1,4 @@
-import { Authentication, AuthenticationParams } from 'domain/useCases'
+import { Authentication, AuthenticationParams } from '@/domain/useCases'
 import { HttpPostClient, HttpStatusCode } from '@/data/protocols/http'
 import { InvalidCredentialError, UnexpectedError } from '@/domain/errors'
 import { AccountModel } from '@/domain/models'
