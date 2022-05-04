@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "cauefurui <cauefurui@gmail.com>",
+  "scripts": {
+    "test": "jest"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^27.5.0",
