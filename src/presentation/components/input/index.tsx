@@ -1,11 +1,15 @@
-import React, {memo} from 'react'
+import React from 'react'
 import styles from './styles.scss'
 
-const Footer: React.FC = () => {
+type Props = React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
+
+const Input: React.FC<Props> = (props: Props) => {
   return (
-    <footer className={styles.footer} />
+    <div className={styles.inputWrap}>
+      <input {...props} />
+      <span className={styles.status}>🔴</span>
+    </div>
   )
 }
 
-// utilizar o memo para evitar re-renderização quando a tela for recarregada
-export default memo(Footer)
+export default Input
