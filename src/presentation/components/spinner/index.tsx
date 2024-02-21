@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './styles.scss'
 
-type Props = React.HTMLAttributes<HTMLElement>
+type Props = React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 
 const Spinner: React.FC<Props> = (props: Props) => {
   return (
