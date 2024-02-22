@@ -1,2 +1,2 @@
-export * from './HttpPostClient'
+export * from './httpPostClient'
 export * from './HttpResponse'
